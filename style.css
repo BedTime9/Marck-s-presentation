@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -72,8 +72,6 @@ html, body {
 
 #result, #result1, #result2, #result3{
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
 }
 
 /* Span (extra) */
@@ -147,4 +145,28 @@ html, body {
   border-radius: 20px;
 
   margin-bottom: 2em;
+}
+
+
+/* Media Querie */
+
+@media (max-width: 600px) {
+  #header {
+    font-size: 1em;
+  }
+
+  .creatures {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
