@@ -14,7 +14,9 @@ const extra3 = document.querySelector("#extra3");
 function extraText() {
   let result = document.querySelector("#result");
   result.style.margin = "10px";
+
   if (result.innerHTML.trim() === "") {
+    extra.innerHTML = "Ler menos.";
     result.innerHTML = "- A giant creature similar to an octopus or squid <br>";
     result.innerHTML +=
       "- Its existence spread from tales of Scandinavian fishermen in the 15th century <br>";
@@ -27,6 +29,7 @@ function extraText() {
 
     console.log("Working");
   } else {
+    extra.innerHTML = "Ler mais.";
     result.innerHTML = "";
   }
 }
@@ -37,6 +40,7 @@ extra.addEventListener("click", extraText);
 function extraText1() {
   let result1 = document.querySelector("#result1");
   if (result1.innerHTML.trim() === "") {
+    extra1.innerHTML = "Ler menos."
     result1.innerHTML =
       "- A sea spirit from Japanese mythology that was the guardian of the seas <br>";
     result1.innerHTML += "- It had the appearance of a humanoid shadow <br>";
@@ -50,6 +54,7 @@ function extraText1() {
       "- In some regions of Japan, it was said that it appeared as a woman who took people to the bottom of the ocean <br>";
     console.log("Working");
   } else {
+    extra1.innerHTML = "Ler mais.";
     result1.innerHTML = "";
   }
 }
@@ -60,6 +65,7 @@ extra1.addEventListener("click", extraText1);
 function extraText2() {
   let result2 = document.querySelector("#result2");
   if (result2.innerHTML.trim() === "") {
+    extra2.innerHTML = "Ler menos.";
     result2.innerHTML +=
       "- A colossal sea monster from Judeo-Christian mythology <br>";
     result2.innerHTML +=
@@ -70,6 +76,7 @@ function extraText2() {
       "- It fights against God in the Jewish apocalypse and is defeated at the end of time <br>";
     console.log("Working");
   } else {
+    extra2.innerHTML = "Ler mais.";
     result2.innerHTML = "";
   }
 }
@@ -80,6 +87,7 @@ extra2.addEventListener("click", extraText2);
 function extraText3() {
   let result3 = document.querySelector("#result3");
   if (result3.innerHTML.trim() === "") {
+    extra3.innerHTML = "Ler mais.";
     result3.innerHTML =
       "- A colossal creature from Norse mythology, so large that it encircles the earth biting its own tail <br>";
     result3.innerHTML +=
@@ -94,6 +102,7 @@ function extraText3() {
       "- In some Norse traditions, it was said that its movements generated tsunamis and earthquakes, and this was a sign that the end of times was approaching <br>";
     console.log("Working");
   } else {
+    extra.innerHTML = "Ler mais.";
     result3.innerHTML = "";
   }
 }
